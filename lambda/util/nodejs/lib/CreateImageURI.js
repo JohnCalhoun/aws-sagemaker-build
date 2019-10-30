@@ -34,9 +34,9 @@ _exports.scikit=function(params,Training=true){
 }
 
 _exports.tensorflow=function(params,Training=true){
-    var account='520713654638'
+    var account='763104351884'
     var instance=params.traininstancetype.split('.')[1][0]==="p" ? "gpu" : "cpu"
-    return `${account}.dkr.ecr.${process.env.AWS_REGION}.amazonaws.com/sagemaker-tensorflow:${params.frameworkversion}-${instance}-${params.pyversion}`
+    return `${account}.dkr.ecr.${process.env.AWS_REGION}.amazonaws.com/tensorflow:${params.frameworkversion}-${instance}-${params.pyversion}`
 }
 
 _exports.mxnet=function(params,Training=true){
