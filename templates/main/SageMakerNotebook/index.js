@@ -7,7 +7,7 @@ module.exports={
         "Type": "AWS::SageMaker::NotebookInstance",
         Condition:"NoteBookInstance",
         "Properties": {
-            SubnetId:{"Fn::If":["CreateVPC",{"Ref":"Subnet1"},{"Fn::If":["ExternalVPC",{"Fn::Select":["0",{"Ref":"VPCSubnets"}]},"False"]}
+            SubnetId:{"Fn::If":["CreateVPC",{"Ref":"Subnet1"},{"Fn::If":["ExternalVPC",{"Fn::Select":["0",{"Ref":"VPCSubnets"}]},"False"]}},
             InstanceType:{"Ref":"NoteBookInstanceType"},
             NotebookInstanceName:{"Fn::GetAtt":["Notebook","Name"]},
             RoleArn:{"Fn::GetAtt":["InternalNotebookRole","Arn"]},
