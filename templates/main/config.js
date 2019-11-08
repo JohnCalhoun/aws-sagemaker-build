@@ -7,6 +7,6 @@ module.exports=Object.assign(base,{
         "AssetPrefix":base.templatePrefix,
         "VPCConfiguration":"ExternalVPC",
         "VPCID":"vpc-09832e025bc21b87e",
-        "VPCSubnets":"subn,subnet-090930421177b009e"
+        "VPCSubnets":"subnet-0cdd2d9f3d8e009e6,subnet-0e3c5f6401a304cdf"
     }
 })
