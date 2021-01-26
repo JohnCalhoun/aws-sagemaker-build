@@ -3,7 +3,7 @@ Automating the build and deployment of machine learning models is an important s
 
 ## Prerequisites
 
-- Run Linux. (tested on Amazon Linux)
+- Run Linux. (tested on Amazon Linux (zip and unzip packages should be installed) )
 - Install npm >5 and node >8. ([instructions](https://nodejs.org/en/download/))
 - Clone this repo.
 - Set up an AWS account. ([instructions](https://AWS.amazon.com/free/?sc_channel=PS&sc_campaign=acquisition_US&sc_publisher=google&sc_medium=cloud_computing_b&sc_content=AWS_account_bmm_control_q32016&sc_detail=%2BAWS%20%2Baccount&sc_category=cloud_computing&sc_segment=102882724242&sc_matchtype=b&sc_country=US&s_kwcid=AL!4422!3!102882724242!b!!g!!%2BAWS%20%2Baccount&ef_id=WS3s1AAAAJur-Oj2:20170825145941:s))
@@ -17,7 +17,7 @@ npm install
 ```
 1. copy config.js.example to config.js
 
-1. create an s3 bucket. [instructions](https://docs.aws.amazon.com/AmazonS3/latest/dev/create-bucket-get-location-example.html). open up config.js and set templateBucket  and AssetBucket to the name of your s3 bucket.
+1. create an s3 bucket versioning enabled. [instructions](https://docs.aws.amazon.com/AmazonS3/latest/dev/create-bucket-get-location-example.html). open up config.js and set templateBucket  and AssetBucket to the name of your s3 bucket.
 
 1. launch stack
 ```shell
